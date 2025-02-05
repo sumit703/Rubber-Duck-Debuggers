@@ -26,8 +26,11 @@
                 </ul>
             </nav>
             
-            <!-- Call to Action -->
-            <a href="#" class="cta">Sign In / Register</a>
+            <div class="auth-buttons">
+                <a href="{{ url_for('auth_routes.login') }}" class="btn">Sign In</a>
+                <a href="{{ url_for('auth_routes.register') }}" class="btn btn-primary">Register</a>
+            </div>
+            
 
             <!-- Mobile Menu Icon -->
             <div class="menu-toggle">
@@ -35,6 +38,8 @@
             </div>
         </div>
     </header>
+
+    
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
@@ -192,6 +197,6 @@
             <p>© 2025 Launch Mate. All Rights Reserved.</p>
         </div>
         
-    </footer>    
+    </footer>  
 </body>
 </html>
