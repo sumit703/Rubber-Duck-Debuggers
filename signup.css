@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    /*background: #0f1269;*/
+    background: linear-gradient(-45deg, #933cbc, #1a499a, #6f42c1, #074e57);
+    background-size: 300% 300%;
+    animation: gradientBG 10s ease infinite;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Auth Container */
+.auth-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Heading */
+.auth-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffb400;
+}
+
+/* Form Styles */
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container input {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+}
+
+/* Placeholder Styles */
+.auth-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Sign Up Button */
+.btn.primary {
+    background: #ffb400;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn.primary:hover {
+    background: #ffb400;
+    transform: scale(1.05);
+}
+
+/* Sign In Link */
+.auth-container p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.auth-container a {
+    color: #ffb400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
+
+/* Message Styling */
+#message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffb400;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .auth-container {
+        padding: 20px;
+    }
+}
